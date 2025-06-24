@@ -46,7 +46,7 @@ public class BSTSetTest
         assertEquals(set.contains(0), true);
         assertEquals(set.contains(-2), false);
         assertEquals(1, set.size());
-        assertEquals("{}", set.toString());
+        assertEquals("{0}", set.toString());
     }
 
 }

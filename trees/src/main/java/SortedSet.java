@@ -1,4 +1,6 @@
 import java.util.Iterator;
+import java.util.HashSet;
+
 /**
  * SortedSet are unbounded sets of objects of type T. 
  * A typical SortedSet is {o1, . . . , on}.
