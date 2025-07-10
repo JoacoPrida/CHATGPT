@@ -34,18 +34,20 @@ public class DFS{
     private void dfs(grafo G, int v) {
 
         G.validarVertice(v);
-        
+
         marked[v] = true;
         count++;
 
         for(int i : G.adyacentes(v))
         {
-            if(!marcado(v))
-            {
-                dfs(G, i);
-            }
+        if(!marcado(v))
+        {   
+            dfs(G, i);
+        }
+
 
         }
+
     }
 
 
