@@ -85,27 +85,3 @@ public class Prim {
     }
 }
 
-// Stub para Edge
-class Edge {
-    public int either() { return 0; }
-    public int other(int v) { return 0; }
-    public double weight() { return 0.0; }
-}
-
-// Stub para EdgeWeightedIntGraph
-class EdgeWeightedIntGraph {
-    public int V() { return 0; }
-    public Iterable<Edge> adj(int v) { return null; }
-}
-
-// Stub para IndexMinPQ
-class IndexMinPQ<Key extends Comparable<Key>> {
-    public IndexMinPQ(int maxN) {}
-    public boolean contains(int i) { return false; }
-    public void insert(int i, Key key) {}
-    public void decreaseKey(int i, Key key) {}
-    public boolean isEmpty() { return true; }
-    public int delMin() { return 0; }
-}
-    
-

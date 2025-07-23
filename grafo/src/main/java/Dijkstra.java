@@ -24,7 +24,7 @@ public class Dijkstra {
         if(v != s)
         {   
             distTo[v] = Double.POSITIVE_INFINITY;
-            pq.insert(v, distTo(v));
+            pq.insert(v, distTo[v]);
 
         }
 
@@ -84,26 +84,4 @@ public class Dijkstra {
 
     
 
-}
-// Stub para DirectedEdge
-class DirectedEdge {
-    public int from() { return 0; }
-    public int to() { return 0; }
-    public double weight() { return 0.0; }
-}
-
-// Stub para EdgeWeightedIntDigraph
-class EdgeWeightedIntDigraph {
-    public int V() { return 0; }
-    public Iterable<DirectedEdge> adj(int v) { return null; }
-}
-
-// Stub para IndexMinPQ
-class IndexMinPQ<Key extends Comparable<Key>> {
-    public IndexMinPQ(int maxN) {}
-    public boolean contains(int i) { return false; }
-    public void insert(int i, Key key) {}
-    public void decreaseKey(int i, Key key) {}
-    public boolean isEmpty() { return true; }
-    public int delMin() { return 0; }
 }
