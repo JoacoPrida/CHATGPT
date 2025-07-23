@@ -21,7 +21,7 @@ public class Kruskal {
      */
     public void kruskal(EdgeWeightedIntGraph G) {
 
-        Edge[] edges =new edges[G.E()];
+        Edge[] edges =new Edge[G.E()];
         int t = 0;
         for(Edge e: G.edges())
         {
@@ -69,36 +69,3 @@ public class Kruskal {
     }
 }
 
-// Stub para Edge
-// ...existing code...
-class Edge implements Comparable<Edge> {
-    private int from; // vértice de origen
-
-    public Edge(int from) {
-        this.from = from;
-    }
-
-    public int from() { return from; }
-    public int either() { return from; }
-    public int other(int v) { return 0; }
-    public double weight() { return 0.0; }
-    public int compareTo(Edge that) {
-        return Double.compare(this.weight(), that.weight());
-    }
-}
-// ...existing code...
-
-// Stub para EdgeWeightedIntGraph
-class EdgeWeightedIntGraph {
-    public int V() { return 0; }
-    public int E() { return 0; }
-    public Iterable<Edge> edges() { return null; }
-}
-
-// Stub para UF (Union-Find)
-class UF {
-    public UF(int n) {}
-    public int find(int p) { return 0; }
-    public void union(int p, int q) {}
-}
-    
